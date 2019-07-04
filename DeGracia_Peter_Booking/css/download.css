@@ -1,0 +1,33 @@
+body
+{   
+    animation-name: look;
+    animation-duration: 1s;
+}
+
+@keyframes look
+{
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.main
+{ 
+    width:360px;
+    height:640px;
+    margin:-1vh auto;
+    border-style:solid;
+}
+
+.logo
+    {
+        font-family: Segoe UI;
+        font-size: 25px;
+        color:black;
+    }
+
+.content
+    {
+        font-family: Segoe UI;
+        font-size: 20px;
+        color:black;
+    }

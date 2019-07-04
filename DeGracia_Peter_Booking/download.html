@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+            <link href="css/download.css" rel="stylesheet" type="text/css">
+            <script src = "js/jspdf.min.js" type = "text/javascript"></script>
+            <script src = "js/html2canvas.js" type = "text/javascript"></script>
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+            <title>Download Booking Information</title>
+    </head>
+    <body id = "container" onload="javascript:genPDF()">
+
+            <div class = "main" id = "main" >
+                <br>
+                    <div class = "logo" align = "center">
+                            <img src= "css/img/travel.png" width="25%" height="25%" style= "display:inline;">
+                            <p class ="name" style= " margin-right:5vh; float:right;"><strong><i>[Name ng Airline]</i></strong></p>
+                     </div>
+                    
+                    <div class = "content">
+                        <p>
+                            <i style = "margin-left:2vh;"><strong>Booking Information</strong></i>
+                        </p>
+                        <div class = "info" style = "margin-top:-2vh; margin-left:4vh; font-size: 15px;" >
+                                <p style = "display:inline;">
+                                 Today's Date: <p id = "date" style = "display:inline;"></p>
+                                </p>
+                                <p style = "margin-top:-2vh;">
+                                    Reservation ID: 12345678910
+                                </p>
+                                <p style = "margin-top:-2vh;">
+                                        Number of Passenger: 1
+                                </p>
+                        </div>
+                        <div class = "header1">
+                            <i style = "margin-left:2vh; display:inline;"><strong>Manila to </strong></i>
+                        <i>
+                            <strong id = "country"></strong>
+                        </i>
+                        </div><br>
+
+                        <div class = "info" style = "margin-top:-4vh; margin-left:4vh; font-size: 15px;" >
+                                <p style = "display:inline;">
+                                 <strong>Flight: </strong> Manila to
+                                </p>
+                                <p id = "country2" style = "display:inline;"></p>
+                        </div><br>
+
+                        <div class = "info" style = "margin-top:-4vh; margin-left:4vh; font-size: 15px;" >
+                                <p style = "display:inline;">
+                                 <strong>Depart: </strong>
+                                </p>
+                                <p id = "time1" style = "display:inline;"></p>
+                        </div><br>
+
+                        <div class = "info" style = "margin-top:-4vh; margin-left:4vh; font-size: 15px;" >
+                                <p style = "display:inline;">
+                                 <strong>Arrive: </strong>
+                                </p>
+                                <p id = "time2" style = "display:inline;"></p>
+                        </div><br>
+
+                        <div class = "info" style = "margin-top:-4vh; margin-left:4vh; font-size: 15px;" >
+                                <p style = "display:inline;">
+                                 <strong>Confirmation Number: </strong>Iberia Z6JHVY 
+                                </p>
+                        </div><br>
+
+                        <div class = "info" style = "margin-top:-4vh; margin-left:4vh; font-size: 15px;" >
+                                <p style = "display:inline;">
+                                 <strong>Flight Number: </strong> Iberia IB4639 
+                                </p>
+                        </div><br>
+
+                        <div class = "info" style = "margin-top:-4vh; margin-left:4vh; font-size: 15px;" >
+                                <p style = "display:inline;">
+                                 <strong>Fare Type: </strong> Economy Class
+                                </p>
+                        </div>
+
+                        <div class = "header1" style = "margin-top:2vh;">
+                                <i style = "margin-left:2vh;"><strong>Date</strong></i>
+                        </div><br>   
+                            
+                        <div class = "dd" style = "margin-top:-4vh; margin-left:4vh; font-size: 15px;" >
+                                <p style = "display:inline;">
+                                 <strong>Departure Date: </strong>
+                                </p>
+                                <p id = "date2" style = "display:inline;"></p>
+                        </div><br>
+
+                        <div class = "info" style = "margin-top:-4vh; margin-left:4vh; font-size: 15px;" >
+                                <p style = "display:inline;">
+                                        PH Ninoy Aquino International Airport
+                                </p>
+                        </div><br>
+
+                        <div class = "info" style = "margin-top:-4vh; margin-left:4vh; font-size: 15px;" >
+                                <p style = "display:inline;">
+                                        Terminal 3
+                                </p>
+                        </div><br>
+
+                        <div class = "info" style = "margin-top:-4vh; margin-left:4vh; font-size: 15px; float:right; margin-right:1vh;" >
+                                <p style = "display:inline;">
+                                        <strong>Flying Time: </strong>5hrs
+                                </p>
+                        </div><br>
+
+                        <div class = "info" style = "margin-top:-4vh; margin-left:4vh; font-size: 15px; float:right; margin-right:1vh;" >
+                                <p style = "display:inline;">
+                                        <strong>Status: </strong>Confirmed
+                                </p>
+                        </div>
+                    </div>
+            </div>
+                
+    </body>
+    <script src = "js/download.js"></script>
+
+</html>     

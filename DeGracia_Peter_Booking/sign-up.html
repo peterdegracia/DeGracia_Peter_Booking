@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+            <link href="css/sign-up.css" rel="stylesheet" type="text/css">
+            <title>Sign up</title>
+    </head>   
+    <body> 
+
+        <div id="myModal" class="modal">
+            <div class="modal-content" align = "center">
+                <div class="modal-header">
+                    <span class="close">&times;</span><br>
+                    <img src= "css/img/checked.png" width="35%" height="35%" class = "checked">
+                    <h2>Account Successfully Created.<br></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class = "main">
+
+                <div class = "time"  align = "right">
+                    <div id = "time"></div>       
+                </div>  
+
+                <div class = "logo"  align= "center" >
+                        <img src= "css/img/travel.png" width="25%" height="25%">
+                        <p class ="name"><strong><i>[Name ng Airline]</i></strong></p>
+                </div><br>
+
+                <div  class = "inputs" align ="center" style = "margin-top:-1vh;">
+                    <img src = "css/img/profile.png" width="14%"  class = "userlogo">
+                    <input class = "user" type = "text" placeholder="Username" REQUIRED>
+                    <img src = "css/img/email.png" width="13%" class = "userlogo">
+                    <input class = "user" type = "email" placeholder="Email Address" REQUIRED>
+                    <img src = "css/img/lock-icon.png" width="13%"  class = "userlogo">
+                    <input class = "user" type = "password" placeholder="Password" REQUIRED>
+                </div><br>  
+
+                <div align = "center">
+                    <input type= "submit" class = "submit"  value = "Sign up"  id="myBtn">
+                </div>   
+                
+            <br>
+
+                    <span class="line"></span><span class = "or">&nbsp;&nbsp;&nbsp; &nbsp;<strong>OR</strong></span><span class = "lines"></span>
+
+
+                <div align="center" style = "margin-top:1vh;">
+                        <button class = "facebook" id="myBtn1">Sign up with <strong>Facebook</strong>
+                            <img src = "css/img/facebook.png" style="float:left; width:10%; height:10%;">
+                        </button>
+                </div>
+            <br>
+
+                <div align="center">
+                        <button class = "Twitter" id="myBtn2">Sign up with <strong>Twitter</strong>
+                            <img src = "css/img/twitter.png" style="float:left; width:10%; height:10%;">
+                        </button>
+                </div>
+            <br>
+
+                <div align="center"> 
+                        <button class = "Google" id="myBtn3">Sign up with <strong>Google</strong>
+                            <img src = "css/img/google-plus.png" style="float:left; width:10.5%; height:10.5%;">
+                        </button>
+                 </div>
+
+            <div class = "sign" align = "center">
+                <a href = "index.html" style = " text-decoration: none; color:red; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 3.5vh;">Already have an account.</a>
+            </div>           
+        </div>  
+    </body>
+    <script src = "js/script.js"></script>
+</html> 

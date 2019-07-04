@@ -1,0 +1,336 @@
+body
+    {   
+        animation-name: look;
+        animation-duration: 1s;
+        
+    }
+  
+ @keyframes look
+    {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+    }
+
+.main
+    {
+        background-color:#727272;   
+        width:360px;
+        height:640px;
+        margin:-2vh auto;
+        border-style:solid;
+    }
+
+.time
+    {
+        width:360px;
+        height:auto;
+        font-size: 15;
+        background-color:black;
+        color:white;  
+        padding-top: 1px;
+    }
+
+.sidenav 
+    {
+        height: 92%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        background-color: #F2F2F2;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+        position: absolute;
+        box-shadow: 2px 1px #888888;
+    }
+
+.sidenav a 
+    {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        transition: 0.3s;
+        display:inline;
+        padding-left:20px;   
+    }
+      
+.sidenav a:hover,.offcanvas a:focus
+    {
+        color: blue;
+    }
+      
+.sidenav .closebtn 
+    {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+      
+#main 
+    {
+        transition: margin-left .5s;
+        padding: 20px;
+    }
+
+@media screen and (max-height: 450px) 
+    {
+        .sidenav 
+        {
+          padding-top: 15px;
+        }
+        .sidenav a 
+        {
+          font-size: 18px;
+        }
+    }
+
+.opt
+    {
+        border-style:none;
+        background-color: white;    
+    }
+
+.opt p
+    {
+        font-family: Roboto;
+        display:inline-block; 
+        font-size: 20px; 
+        padding-left:25px;
+    }
+
+.user
+    {
+        width:100%;
+        background-color:#9F9F9F;
+        height:25vh;
+    }
+
+.user p
+    {
+        color:white;
+        display:inline-block;
+    }
+
+.user img
+    {
+        padding-top:50px;
+    }
+
+.link img
+    {
+        padding-left:20px;
+        padding-right:15px;
+    }
+    
+.slideshow-container 
+    {
+        max-width: 1000px;
+        position: relative;
+        margin: -3.3vh;
+    }
+
+.text 
+    {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+.numbertext 
+    {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+.dot 
+    {
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+.active 
+    {
+        background-color: black;
+    }
+
+.fade 
+    {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+@keyframes fade 
+    {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+@media only screen and (max-width: 300px) 
+    {
+        .text {font-size: 11px}
+    }
+
+.content
+    {
+        width:100%;
+        height:52%;
+        background-color:#F1F9FF;
+        border-radius: 45px;
+        margin-top:-15vh;
+        position: relative;   
+    }
+
+.content input[type=date]
+    {
+        margin-left:1.5vh;
+        margin-top:1vh;
+        width:38%;
+        position: relative;
+        padding: 8px;
+    }
+
+.content input[type=number]
+    {
+        margin-left:2.5vh;
+        margin-top:1vh;
+        width:40%;
+        position: relative;
+        padding: 3px;
+        border-radius: 30px;
+    }
+
+.content input[type=text]
+    {
+        padding: 3px;
+    }
+
+.content select
+    {
+        padding: 2px;
+        cursor: pointer;    
+    }
+
+input[type="date"]::-webkit-calendar-picker-indicator 
+    {
+        color: transparent;
+        background: none;
+        z-index: 1;
+        cursor: pointer;
+    }
+      
+input[type="date"]:before 
+    {
+        color: transparent;
+        background: none;
+        display: block;
+        font-family: 'FontAwesome';
+        content: '\f073';
+        width: 15px;
+        height: 20px;
+        position: absolute;
+        top: 12px;
+        right: 6px;
+        color: #999;
+    }
+
+.content p
+    {
+        margin-left:2.5vh;
+        font-family:Segoe UI;
+        font-size:18px;
+    }
+
+.submit button
+    {
+        width:90%;
+        margin-top:3vh;
+        border-radius: 30px;
+        border-style:none;
+        background-color:#3B47F6;
+        color:white;
+        font-size: 25px;
+        height:50px;
+        cursor: pointer;
+    }
+.submit button:hover
+{
+    background-color:#0010FF;
+}
+
+.modal 
+    {
+        display: none; 
+        position: fixed;
+        z-index: 1; 
+        padding-top: 100px; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4); 
+    }  
+
+.modal-content 
+    {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 28%;
+        -webkit-border-radius: 30px !important;
+        -moz-border-radius: 30px !important;
+        border-radius: 30px !important;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s;  
+    }
+
+@keyframes animatetop 
+    {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+    }
+
+.close
+    {
+        color: black;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    } 
+
+.close:hover,.close:focus 
+    {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.modal-header 
+    {
+        padding: 2px 16px;
+        background-color: #F1F9FF;
+        color: black;
+        border-radius: 50px;
+    }
+    
+.modal-body 
+    {   
+      padding: 2px 16px;
+    }

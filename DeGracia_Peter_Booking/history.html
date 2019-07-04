@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+            <link href="css/history.css" rel="stylesheet" type="text/css">
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+            <title>History</title>
+    </head>
+    <body>
+        <div class = "main">
+
+                <div class = "time"  align = "right">
+                    <div id = "time"></div>       
+                </div> 
+
+                <div id="mySidenav" class="sidenav">
+                       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class = "user" align = "center" >
+                            <img src = "css/img/avatar.png">
+                            <p>
+                                <strong>[USERNAME]</strong><br>Philippines, Manila
+                            </p>
+                        </div><br>
+                        <div class = "link">
+                            <a href="history.html"   style = "color:#FF0000;"> <img src = "css/img/history-clock-button.png" width = "15%" height = "5%">History</a><br><br>
+                            <a href="look.html"><img src = "css/img/search.png" width = "15%" height = "5%">Search Flights</a><br><br>
+                            <a href="#" id = "notavailable"><img src = "css/img/nut-icon.png" width = "15%" height = "5%">Options</a><br><br>
+                            <a href="index.html"><img src = "css/img/logout.png" width = "15%" height = "5%">Log out</a>
+                        </div>
+                </div>
+                
+                <div class= "opt" >
+                    <span onclick="openNav()" style = "font-size: 20px; cursor:pointer; margin-left:10px;"> &#9776; </span>
+                    <p><strong>HISTORY</strong></p>
+                </div>
+
+                <div id="main">
+                        <div class = "content">
+                                <img src = "css/img/airplane2.png" style = "float:left; margin-top:1vh;" height="80%">
+                                
+                                <strong><p style = "display:inline; margin-left:-1vh;">Manila to USA</p></strong>
+                                <p style = "color: #897E7E; font-size: 15px; display:inline; margin-left:6vh;">June 7, 2019</p>
+                                <p style = "color: #897E7E; font-size: 14px; margin:0vh auto; margin-left:12vh;">4:00pm - 9:00pm</p>
+                                <a href = "Booking_info.html" onclick="function1();" style = "color: #0011FF; font-size: 17px; float:right; margin-top:2vh;">Booking Info</a>
+                            </div><br>
+                        
+                        <div class = "content">
+                                    <img src = "css/img/airplane2.png" style = "float:left; margin-top:1vh;" height="80%">
+                                    
+                                    <strong><p style = "display:inline; margin-left:-1vh;">Manila to HK</p></strong>
+                                    <p style = "color: #897E7E; font-size: 15px; display:inline; margin-left:7vh;">April 10, 2018</p>
+                                    <p style = "color: #897E7E; font-size: 14px; margin:0vh auto; margin-left:12vh;">5:00pm - 10:00pm</p>
+                                    <a href = "Booking_info.html" onclick="function2();" style = "color: #0011FF; font-size: 17px; float:right; margin-top:2vh; ">Booking Info</a>
+                            </div><br>
+        
+                        <div class = "content">
+                                <img src = "css/img/airplane2.png" style = "float:left; margin-top:1vh;" height="80%">
+                                
+                                <strong><p style = "display:inline; margin-left:-1vh;">Manila to China</p></strong>
+                                <p style = "color: #897E7E; font-size: 15px; display:inline; margin-left:4vh;">Jan. 8, 2017</p>
+                                <p style = "color: #897E7E; font-size: 14px; margin:0vh auto; margin-left:12vh;">2:00pm - 7:00pm</p>
+                                <a href = "Booking_info.html" onclick="function3();" style = "color: #0011FF; font-size: 17px; float:right; margin-top:2vh; ">Booking Info</a>
+                        </div><br>
+        
+                        <div class = "content">
+                            <img src = "css/img/airplane2.png" style = "float:left; margin-top:1vh;" height="80%">
+                            
+                            <strong><p style = "display:inline; margin-left:-1vh;">Manila to Boston</p></strong>
+                            <p style = "color: #897E7E; font-size: 15px; display:inline; margin-left:2vh;">Feb. 8, 2016</p>
+                            <p style = "color: #897E7E; font-size: 14px; margin:0vh auto; margin-left:12vh;">6:00am - 11:00 am</p>
+                            <a href = "Booking_info.html" onclick="function4();" style = "color: #0011FF; font-size: 17px; float:right; margin-top:2vh; ">Booking Info</a>
+                    </div><br>
+                    
+                    <div class = "content">
+                        <img src = "css/img/airplane2.png" style = "float:left; margin-top:1vh;" height="80%">
+                        
+                        <strong><p style = "display:inline; margin-left:-1vh;">Manila to UK</p></strong>
+                        <p style = "color: #897E7E; font-size: 15px; display:inline; margin-left:7vh;">Dec. 28, 2015</p>
+                        <p style = "color: #897E7E; font-size: 14px; margin:0vh auto; margin-left:12vh;">12:00am - 4:00 am</p>
+                        <a hreft = "Booking_info.html" onclick="function5();" style = "color: #0011FF; font-size: 17px; float:right; margin-top:2vh; ">Booking Info</a>
+                </div><br>
+
+                    </div>
+            </div>
+        
+        <div id="myModal" class="modal">
+                <div class="modal-content" align = "center">
+                    <div class="modal-header">
+                        <span class="close">&times;</span><br>
+                        <h2>ERROR</h2>
+                        <img src= "css/img/Path 268.png" width="35%" height="35%" class = "checked">
+                        <h2>This Feature is not available right now.<br></h2>
+                    </div>
+                </div>
+            </div>
+    
+    </body>
+    <script src = "js/history.js"></script>
+</html>     

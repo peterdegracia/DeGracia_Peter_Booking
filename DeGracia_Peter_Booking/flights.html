@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+            <link href="css/flights.css" rel="stylesheet" type="text/css">
+            <title>Flights</title>
+    </head>
+    <body>
+        <div class = "main">
+
+                    <div class = "time"  align = "right">
+                        <div id = "time"></div>       
+                    </div> 
+
+                    <div id="mySidenav" class="sidenav">
+                       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class = "user" align = "center" >
+                            <img src = "css/img/avatar.png">
+                            <p>
+                                <strong>[USERNAME]</strong><br>Philippines, Manila
+                            </p>
+                    </div><br>
+
+                    <div class = "link">
+                        <a href="history.html"> <img src = "css/img/history-clock-button.png" width = "15%" height = "5%">History</a><br><br>
+                        <a href="look.html" style = "color:#FF0000;"><img src = "css/img/search.png" width = "15%" height = "5%">Search Flights</a><br><br>
+                        <a href="#" id = "notavailable"><img src = "css/img/nut-icon.png" width = "15%" height = "5%">Options</a><br><br>
+                        <a href="index.html"><img src = "css/img/logout.png" width = "15%" height = "5%">Log out</a>
+                    </div>
+        </div>
+                
+                <div class= "opt" >
+                    <span onclick="openNav()" style = "font-size: 20px; cursor:pointer; margin-left:10px;"> &#9776; </span>
+                    <p><strong>FLIGHTS AVAILABLE</strong></p>
+                </div>
+
+                <div  id="main">
+                    
+                    <div class = "content">
+                        
+                        <strong><p style = "display:inline;">Manila</p></strong>
+                        <img src = "css/img/airplane.png" style = "margin-left:10px; margin-top:1vh;" height="10%">
+                        <strong><p id = "magic" style = "display:inline;"></p></strong>
+                       
+                        <a href = "book.html" onclick="function1()">
+                            <img src = "css/img/keyboard-right-arrow-button.png" style = "float: right; position: relative; margin-top:3.5vh;">
+                        </a><br>   
+
+                        <i><p style = "font-size: 16px; display: inline;" >4:00pm</p></i>
+                        <input type = "hidden" value = "4:00 pm" id = "time1">
+                        <i><p style = "margin-left:10.5vh; font-size: 16px; display: inline;">9:00pm</p></i><br>
+                        <input type = "hidden" value = "9:00pm" id = "time2">
+                        <p style = "font-size: 16px; display: inline;"><strong>Departure Date:</strong></p> <p id = "dept" style = "font-size: 16px; display: inline;"></p>
+                        <p style = "font-size: 16px; display: inline;"><strong>Return Date:</strong></p> <p id = "return" style = "font-size: 16px; display: inline;"></p><br>
+                        <p style = "font-size: 16px; display: inline;"><strong>Seats Available:</strong></p> <p id = "seats" style = "font-size: 16px; display: inline;"></p><br>
+                        <p style = "font-size: 16px; display: inline;"><strong>Cabin Class:</strong></p> <p id = "cabin" style = "font-size: 16px; display: inline;"></p><br>
+                        <p style = "font-size: 16px; display: inline;"><strong>Trip:</strong></p> <p id = "trip" style = "font-size: 16px; display: inline;"></p><br><br>
+                        <strong><i><p style = "font-size: 17px; margin-top:0vh; color: #FF9100;">₱ 3,500.50/pax</p></i></strong>
+                       
+                    </div><br>
+
+                    <div class = "content">
+                        
+                            <strong><p style = "display:inline;">Manila</p></strong>
+                            <img src = "css/img/airplane.png" style = "margin-left:10px; margin-top:1vh;" height="10%">
+                            <strong><p id = "magic2" style = "display:inline;"></p></strong>
+                           
+                            <a href = "book.html" onclick="function2();">
+                                <img src = "css/img/keyboard-right-arrow-button.png" style = "float: right; position: relative; margin-top:3.5vh;">
+                            </a><br>   
+    
+                            <i><p style = "font-size: 16px; display: inline;">6:00pm</p></i>
+                            <input type = "hidden" value = "6:00 pm" id = "time3">
+                            <i><p style = "margin-left:10.5vh; font-size: 16px; display: inline;">11:00pm</p></i><br>
+                            <input type = "hidden" value = "11:00pm" id = "time4"">
+                            <p style = "font-size: 16px; display: inline;"><strong>Departure Date:</strong></p> <p id = "dept2" style = "font-size: 16px; display: inline;"></p>
+                            <p style = "font-size: 16px; display: inline;"><strong>Return Date:</strong></p> <p id = "return2" style = "font-size: 16px; display: inline;"></p><br>
+                            <p style = "font-size: 16px; display: inline;"><strong>Seats Available:</strong></p> <p id = "seats2" style = "font-size: 16px; display: inline;"></p><br>
+                            <p style = "font-size: 16px; display: inline;"><strong>Cabin Class:</strong></p> <p id = "cabin2" style = "font-size: 16px; display: inline;"></p><br>
+                            <p style = "font-size: 16px; display: inline;"><strong>Trip:</strong></p> <p id = "trip2" style = "font-size: 16px; display: inline;"></p><br><br>
+                            <strong><i><p style = "font-size: 17px; margin-top:0vh; color: #FF9100;">₱ 2,500.45/pax</p></i></strong>
+
+                    </div><br>  
+                    
+            <div class = "submit">
+                <form action="look.html">
+                    <button style = "cursor: pointer;">Back</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+            <div class="modal-content" align = "center">
+                <div class="modal-header">
+                    <span class="close">&times;</span><br>
+                    <h2>ERROR</h2>
+                    <img src= "css/img/Path 268.png" width="35%" height="35%" class = "checked">
+                    <h2>This Feature is not available right now.<br></h2>
+                </div>
+            </div>
+        </div>
+
+    </body> 
+    <script src = "js/flights.js"></script>
+</html>     

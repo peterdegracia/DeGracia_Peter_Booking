@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+            <link href="css/search.css" rel="stylesheet" type="text/css">
+            <title>Searching..</title>
+    </head>
+    <body>
+        <div class = "main">
+
+                <div class = "time"  align = "right">
+                    <div id = "time"></div>       
+                </div> 
+
+                <div id="mySidenav" class="sidenav">
+                       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class = "user" align = "center" >
+                            <img src = "css/img/avatar.png">
+                            <p>
+                                <strong>[USERNAME]</strong><br>Philippines, Manila
+                            </p>
+                        </div><br>
+                        <div class = "link">
+                            <a href="history.html"> <img src = "css/img/history-clock-button.png" width = "15%" height = "5%">History</a><br><br>
+                            <a href="look.html"  style = "color:#FF0000;"><img src = "css/img/search.png" width = "15%" height = "5%">Search Flights</a><br><br>
+                            <a href="#" id = "notavailable"><img src = "css/img/nut-icon.png" width = "15%" height = "5%">Options</a><br><br>
+                            <a href="index.html"><img src = "css/img/logout.png" width = "15%" height = "5%">Log out</a>
+                        </div>
+                </div>
+                
+                <div class= "opt" >
+                    <span onclick="openNav()" style = "font-size: 20px; cursor:pointer; margin-left:10px;"> &#9776; </span>
+                    <p><strong>LOOK FOR FLIGHT</strong></p>
+                </div>
+
+                <div id="main">
+                    <div align = "center"  class = "Search">
+                        <p>Searching....</p>
+                    </div>
+                    <div class="loader" align = "center"></div>
+        </div> 
+
+    <div id="myModal" class="modal">
+            <div class="modal-content" align = "center">
+                <div class="modal-header">
+                    <span class="close">&times;</span><br>
+                    <h2>ERROR</h2>
+                    <img src= "css/img/Path 268.png" width="35%" height="35%" class = "checked">
+                    <h2>This Feature is not available right now.<br></h2>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <input type = "hidden" id = "val"  val = "">
+    <input type = "hidden" id = "val2"  val = "">
+    <input type = "hidden" id = "val3"  val = "">
+    <input type = "hidden" id = "val4"  val = "">
+    <input type = "hidden" id = "val5"  val = "">
+    <input type = "hidden" id = "val6"  val = "">
+    <script src = "js/search.js"></script>
+
+</html>     

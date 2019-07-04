@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+            <link href="css/Booking_info.css" rel="stylesheet" type="text/css">
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+            <title>Booking Information</title>
+    </head>
+    <body>
+        <div class = "main">
+
+                <div class = "time"  align = "right">
+                    <div id = "time"></div>       
+                </div> 
+
+                <div id="mySidenav" class="sidenav">
+                       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class = "user" align = "center" >
+                            <img src = "css/img/avatar.png">
+                            <p>
+                                <strong>[USERNAME]</strong><br>Philippines, Manila
+                            </p>
+                        </div><br>
+                        <div class = "link">
+                            <a href="history.html"   style = "color:#FF0000;"> <img src = "css/img/history-clock-button.png" width = "15%" height = "5%">History</a><br><br>
+                            <a href="look.html"><img src = "css/img/search.png" width = "15%" height = "5%">Search Flights</a><br><br>
+                            <a href="#" id = "notavailable"><img src = "css/img/nut-icon.png" width = "15%" height = "5%">Options</a><br><br>
+                            <a href="index.html"><img src = "css/img/logout.png" width = "15%" height = "5%">Log out</a>
+                        </div>
+                </div>
+                
+                <div class= "opt" >
+                    <span onclick="openNav()" style = "font-size: 20px; cursor:pointer; margin-left:10px;"> &#9776; </span>
+                    <p><strong>HISTORY</strong></p>
+                </div>
+
+                <div id="main">
+                        
+                    <div class = "logo" >
+                            <img src= "css/img/travel.png" width="25%" height="25%" style= "margin-top:-1vh;    ">
+                            <p class ="name" style= "margin-top:2vh; float: right;"><strong><i>[Name ng Airline]</i></strong></p>
+                    </div>
+                    <div class = "content">
+                        <strong><i><p style = "display:inline; ">Booking Information</p></i></strong><br>
+                        <p style = "font-size:14px; display:inline; margin-left:2vh;">Today's Date: </p>
+                        <p style = "font-size:14px; display:inline;" id = "date"></p><br>
+                        <p style = "font-size:14px; display:inline; margin-left:2vh;">Reservation ID: 12345678910</p><br>
+                        <p style = "font-size:14px; display:inline; margin-left:2vh;">Number of Passenger: </p>
+                        <p id = "passenger" style = "font-size:16px; display:inline;">1</p>
+                    </div>
+                    
+        </div>
+        <div class = "header1">
+                <strong><i><p style ="margin-left:3.5vh;  display:inline;">Manila to </p></i></strong>
+                <strong><i><p id = "country" style = "display:inline;"></p></i></strong>
+        </div>
+
+        <div class = "content2">
+
+                <strong style = "margin-left:5vh; font-size:14px;">Flight:</strong>
+                <p  style = "display:inline; font-size:14px;">Manila to</p>
+                <p id = "country2" style = "display:inline; font-size:14px; "></p>
+                <br>
+                
+                <strong style = "margin-left:5vh; font-size:14px;">Depart:</strong>
+                <p  style = "display:inline; font-size:14px;" id = "time1"></p>
+                <br>
+                
+                <strong style = "margin-left:5vh; font-size:14px;">Arrive:</strong>
+                <p  style = "display:inline; font-size:14px;" id = "time2"></p>
+                <br>
+                
+                <strong style = "margin-left:5vh; font-size:14px;">Confirmation Number:</strong>
+                <p  style = "display:inline; font-size:14px;">Iberia Z6JHVY</p>
+                <br>
+
+                    <strong style = "margin-left:5vh; font-size:16px;">Flight Number:</strong>
+                <p  style = "display:inline; font-size:16px;">Iberia IB4639</p>
+                <br>
+                
+                <strong style = "margin-left:5vh; font-size:16px;">Fare Type:</strong>
+                <p id = "cabin" style = "display:inline; font-size:16px; ">Economy Class </p>
+
+        </div><br>
+
+        <div class = "header1">
+                <strong><i><p style ="margin-left:3.5vh;  display:inline;">Date</p></i></strong>
+        </div>
+
+        
+        <div class = "content2">
+                
+                <strong style = "margin-left:5vh; font-size:14px;">Departure Date:</strong>
+                <p id = "date2" style = "display:inline; font-size:14px; "></p>
+                <br>
+                
+                <p style = "margin-left:5vh; font-size:14px; display:inline;">PH Ninoy Aquino International Airport</p>
+                <br>
+
+                <p style = "margin-left:5vh; font-size:14px; display:inline;">Terminal 3</p>
+                <br>
+                
+                <strong style = "display:inline; margin-left:35vh; font-size:14px;">Flying Time:</strong>
+                <p style = "display:inline; font-size:14px; ">5 hours</p>
+                <br>
+
+                <strong style = "display:inline; margin-left:35vh; font-size:14px;">Status:</strong>
+                <p style = "display:inline; font-size:14px; ">Confirmed</p>
+                <br>
+        </div><br>
+
+        <form action = "history.html" style = "display:inline; border-radius: 30px; ">
+            <button class = "back" style = "cursor: pointer;">
+                <strong>Back</strong>
+            </button>
+        </form>
+
+        <form action = "download.html" target="_blank"style = "display:inline; border-radius: 30px;">
+            <button  class = "book" style = "cursor: pointer;" id = "submit" >
+                <strong>Download</strong>
+            </button>
+        </form>
+                    </div>
+        
+            <div id="myModal" class="modal">
+                <div class="modal-content" align = "center">
+                    <div class="modal-header">
+                        <span class="close">&times;</span><br>
+                        <h2>ERROR</h2>
+                        <img src= "css/img/Path 268.png" width="35%" height="35%" class = "checked">
+                        <h2>This Feature is not available right now.<br></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="myModal2" class="modal2">
+                <div class="modal-content2" align = "center">
+                    <div class="modal-header2">
+                        <span class="close2">&times;</span><br>
+                        <img src= "css/img/checked.png" width="35%" height="35%" class = "checked">
+                        <h2>Booking Information Successfully Downloaded.<br></h2>
+                    </div>
+                </div>
+            </div>
+    
+    </body>
+
+    
+    <script src = "js/Booking_info.js"></script>
+</html>     

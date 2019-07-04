@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+            <link href="css/payment.css" rel="stylesheet" type="text/css">
+            <title>Payment</title>
+    </head>
+    <body>
+        <div class = "main">
+
+                    <div class = "time"  align = "right">
+                        <div id = "time"></div>       
+                    </div> 
+
+                <div id="mySidenav" class="sidenav">
+                       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class = "user" align = "center" >
+                            <img src = "css/img/avatar.png">
+                            <p>
+                                <strong>[USERNAME]</strong><br>Philippines, Manila
+                            </p>
+                    </div><br>
+
+                    <div class = "link">
+                        <a href="history.html"> <img src = "css/img/history-clock-button.png" width = "15%" height = "5%">History</a><br><br>
+                        <a href="look.html"  style = "color:#FF0000;"><img src = "css/img/search.png" width = "15%" height = "5%">Search Flights</a><br><br>
+                        <a href="#" id = "notavailable"><img src = "css/img/nut-icon.png" width = "15%" height = "5%">Options</a><br><br>
+                        <a href="index.html"><img src = "css/img/logout.png" width = "15%" height = "5%">Log out</a>
+                    </div>
+                </div>
+                
+                <div class= "opt" >
+                    <span onclick="openNav()" style = "font-size: 20px; cursor:pointer; margin-left:10px;"> &#9776; </span>
+                    <p><strong>PURCHASE FLIGHT</strong></p>
+                </div><br><br>
+
+                <div id="main" >
+                    <div class = "content" align = "center">
+                       <br>
+                          <p style = "margin-left:5vh">Please Choose your Payment Options.</p>
+                                <div class = "inputs">
+                                    <label>
+                                        <input type="radio" name="test" id = "radio" checked>
+                                        <img src="css/img/visa.png" width="20%" style = "float:left; margin-left:5vh;" >
+                                    </label>
+                                    
+                                    <label>
+                                        <input type="radio" name="test" id = "radio"  >
+                                        <img src="css/img/mastercard.png" width="20%" style = "float:center;" >
+                                    </label>
+                                    
+                                    <label>
+                                        <input type="radio" name="test" id = "radio" >
+                                        <img src="css/img/paypal.png" width = "20%" style = "float:right;" >
+                                    </label>
+                                    <br>
+                                    
+                                    <strong><p style = " float:left; margin-left:5vh; margin-top:1vh;">Card Holder's Name</p></strong>
+                                    <input type = "text" id = "name" placeholder="Input Name" style = " float:left; margin-left:5vh; margin-top:-2vh; width:80%; height:20px;" >
+                                    <strong><p style = " float:left; margin-left:5vh;">Card Number</p></strong>
+                                    <input type = "text" id = "number" placeholder="Input Card Number" style = " float:left; margin-left:5vh; margin-top:-2vh; width:80%; height:20px;" maxlength="19" >
+                                    <strong><p style = " float:left; margin-left:5vh;">Valid Thru</p></strong>
+                                    <input type = "month" id = "date" style = " float:left; margin-left:5vh; margin-top:-2vh; width:60%; height:20px;" min="2019-06" >
+                                    <strong><p style = " float:left; margin-left:5vh;">CVC/CVV</p></strong>
+                                    <input type = "text" id = "number2" placeholder="Input CVC/CVV" style = " float:left; margin-left:5vh; margin-top:-2vh; width:60%; height:20px;" maxlength="4" >
+                                
+                                </div>
+                            
+                    <button class = "buy" id = "myBtn">
+                            <strong>Purchase Flight</strong>
+                    </button> 
+
+                    <form action = "book.html">
+                        <button class = "cancel">
+                            <strong>Cancel</strong>
+                        </button>
+                    </form>
+                </div>  
+        </div>
+    </div>
+    
+        <div id="myModal" class="modal">
+            <div class="modal-content" align = "center">
+                <div class="modal-header">
+                    <span class="close">&times;</span><br>
+                    <img src= "css/img/checked.png" width="35%" height="35%" class = "checked">
+                    <h2>Flight Successfully Purchased.<br></h2>
+                </div>
+            </div>
+        </div>
+
+         <div id="myModal2" class="modal2">
+            <div class="modal-content2" align = "center">
+                <div class="modal-header2">
+                    <h2>Do you want to look for flights again?<br></h2>
+                        <form action = "index.html" style = "display:inline;">
+                                <button class = "no">
+                                    <strong>NO</strong>
+                                </button>
+                        </form>
+                        <form action = "look.html"  style = "display:inline;">
+                                <button class = "yes">
+                                    <strong>YES</strong>
+                                </button><br><br>
+                        </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal3" class="modal3">
+                <div class="modal-content3" align = "center">
+                    <div class="modal-header3">
+                        <span class="close3">&times;</span><br>
+                        <h2>ERROR</h2>
+                        <img src= "css/img/Path 268.png" width="35%" height="35%" class = "checked">
+                        <h2>This Feature is not available right now.<br></h2>
+                    </div>
+                </div>
+            </div>
+    
+    </body> 
+    <script src = "js/payment.js"></script>
+</html>     
